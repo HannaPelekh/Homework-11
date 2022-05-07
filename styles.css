@@ -1,0 +1,121 @@
+body{
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px auto;
+    width: 70vw;   
+    background-color: rgb(11 0 255 / 31%);     
+}
+#container{
+    width: 100%;
+    height: 130px; 
+}
+.button-box{        
+    margin: 0;    
+    display: flex;
+    justify-content: space-between;
+
+}
+.input-container{
+    width: 58%;
+}
+#input{     
+    width: 100%;  
+    background-color: rgb(11 0 255 / 50%);
+    border-radius: 20px;
+    border: 2px solid rgba(15, 15, 15, 0.4); 
+    padding: 10px 20px;    
+    height: 40px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+#input::placeholder {
+    color: white;
+    opacity: 1; 
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+}
+#button{  
+    height: 62px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    width: 35%;  
+    border-radius: 20px;
+    background-color: rgb(14 17 167 / 80%);
+    border: 2px solid rgba(15, 15, 15, 0.4);    
+    color: #FFF;
+    
+}
+#todo-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;    
+    height: 70vh;
+    border: 2px solid rgba(15, 15, 15, 0.4);  
+    border-radius: 20px;
+    background-color: rgb(11 0 255 / 35%);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+    justify-content: flex-start;
+    overflow-y: auto;
+    
+}
+.items{
+    padding: 10px;
+    font-size: 20px;
+    width: 20%;
+    border: 2px solid rgba(15, 15, 15, 0.2);
+    border-radius: 10px;
+    margin: 10px;
+    height: 10vh;
+    overflow-y: auto;      
+    background-color: #eeeeeed6;
+    position: relative;
+}
+.items::after{
+    content: '\f00d';
+    z-index: 2;
+    position: absolute;
+    top: 10px; 
+    right: 10px;  
+    font-family: FontAwesome;
+    font-size: 20px; 
+    color:rgba(15, 15, 15, 0.413); 
+    
+}
+.delete{
+    width: 12px;
+    height: 15px;    
+    z-index: 5;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+.complite{
+    background-color: rgb(11 0 255 / 50%);       
+    color: #FFF;
+}
+.error-massege{
+    color: rgb(249, 10, 106);
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+       
+}
+
+
+
+
+
+
+
+
+
